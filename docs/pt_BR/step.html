@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mona Mayhem Workshop</title>
+    <title>Workshop Mona Mayhem</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -29,10 +29,10 @@
         <div class="header-content">
             <a href="index.html" class="header-brand">
                 <span class="header-icon">🎮</span>
-                <span class="header-title">Mona Mayhem Workshop</span>
+                <span class="header-title">Workshop Mona Mayhem</span>
             </a>
             <div class="header-nav">
-                <div class="track-toggle" role="tablist" aria-label="Workshop track toggle">
+                <div class="track-toggle" role="tablist" aria-label="Alternar trilha do workshop">
                     <button class="track-btn active" data-track="vscode" type="button">VS Code</button>
                     <button class="track-btn" data-track="cli" type="button">CLI</button>
                 </div>
@@ -385,7 +385,7 @@
             buildSidebar();
             updateNavButtons();
             buildFooterNav();
-            document.title = `${step.title} - Mona Mayhem Workshop (${TRACKS[currentTrack].label})`;
+            document.title = `${step.title} - Workshop Mona Mayhem (${TRACKS[currentTrack].label})`;
 
             const contentEl = document.getElementById('markdownContent');
             contentEl.innerHTML = '<div class="loading">Carregando conteúdo</div>';
@@ -413,7 +413,7 @@
                     <div class="markdown">
                         <h1>${step.title}</h1>
                         <p>Não foi possível carregar o conteúdo. Por favor, verifique o <a href="https://github.com/copilot-dev-days/mona-mayhem" target="_blank">repositório GitHub</a> diretamente.</p>
-                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Error: ${err.message}</p>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Erro: ${err.message}</p>
                     </div>`;
             }
         }

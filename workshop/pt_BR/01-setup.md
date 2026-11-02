@@ -118,32 +118,35 @@ Vamos usar o comando integrado `/init` para gerar um arquivo de instruções do 
 
 > **Resultado:** Todas as futuras solicitações ao Copilot agora têm um mapa do seu workspace incorporado.
 
-### Tarefa 2: Agentes em Segundo Plano
+### Tarefa 2: Agentes em segundo plano
 
-**Agente em segundo plano local:**
+**Agente local em segundo plano:**
 
-1. No painel de Chat, clique em **+** → **New background agent**
-2. Digite o prompt:
+1. No painel de Chat, clique em **+** para iniciar um novo chat.
+2. Na parte inferior da janela, altere **Local** para **Copilot CLI**.
+3. Digite este prompt:
 
-   > "Add linting rules for unused vars and improve code style; fix any errors"
+   > "Adicione regras de lint para variáveis não utilizadas e melhore o estilo do código; corrija os erros."
 
-3. Quando terminar, **Revise e Aplique** as alterações, depois delete a sessão.
+4. Quando terminar, **revise e aplique** as alterações e, se quiser, arquive a sessão.
 
 **Agente na nuvem:**
 
-1. Inicie outro agente em segundo plano com:
+1. No painel de Chat, clique em **+** para iniciar outro chat.
+2. Na parte inferior da janela, altere **Local** para **Cloud**.
+3. Digite este prompt:
 
-   > "Make the README more engaging as a landing page"
+   > "Deixe o README mais atraente como página de apresentação."
 
-> **Resultado:** Regras de linting adicionadas, erros corrigidos, README melhorado — tudo sem sair do seu editor.
+> **Resultado:** Regras de lint adicionadas, erros corrigidos e README aprimorado — tudo sem sair do editor.
 
 ### Tarefa 3: Explore o Projeto
 
 Abra o **Copilot Chat** no **modo Ask** e experimente estes prompts:
 
-- `"Explain the architecture of this project"`
-- `"What files are in the src directory and what do they do?"`
-- `"What would I need to build to make the Battle button work?"`
+- "Explique a arquitetura deste projeto."
+- "Quais arquivos existem no diretório src e para que servem?"
+- "O que eu precisaria criar para fazer o botão Battle funcionar?"
 
 > 💡 Use **@workspace** para dar ao Copilot contexto de todo o projeto para respostas mais precisas.
 <!-- track:vscode:end -->

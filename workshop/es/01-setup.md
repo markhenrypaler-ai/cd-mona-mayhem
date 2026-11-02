@@ -118,32 +118,35 @@ Usemos el comando integrado `/init` para generar un archivo de instrucciones del
 
 > **Resultado:** Todas las futuras solicitudes a Copilot ahora tienen un mapa de tu workspace incorporado.
 
-### Tarea 2: Agentes en Segundo Plano
+### Tarea 2: Agentes en segundo plano
 
-**Agente en segundo plano local:**
+**Agente local en segundo plano:**
 
-1. En el panel de Chat, haz clic en **+** → **New background agent**
-2. Ingresa el prompt:
+1. En el panel de Chat, haz clic en **+** para iniciar un chat nuevo.
+2. En la parte inferior de la ventana, cambia **Local** a **Copilot CLI**.
+3. Escribe este prompt:
 
-   > "Add linting rules for unused vars and improve code style; fix any errors"
+   > «Añade reglas de lint para las variables sin usar y mejora el estilo del código; corrige los errores».
 
-3. Cuando termine, **Revisa y Aplica** los cambios, luego elimina la sesión.
+4. Cuando termine, **revisa y aplica** los cambios y, si quieres, archiva la sesión.
 
 **Agente en la nube:**
 
-1. Inicia otro agente en segundo plano con:
+1. En el panel de Chat, haz clic en **+** para iniciar otro chat.
+2. En la parte inferior de la ventana, cambia **Local** a **Cloud**.
+3. Escribe este prompt:
 
-   > "Make the README more engaging as a landing page"
+   > «Haz que el README sea más atractivo como página de presentación».
 
-> **Resultado:** Reglas de linting agregadas, errores corregidos, README mejorado — todo sin salir de tu editor.
+> **Resultado:** Se añaden reglas de lint, se corrigen errores y se mejora el README, todo sin salir del editor.
 
 ### Tarea 3: Explora el Proyecto
 
 Abre **Copilot Chat** en **modo Ask** y prueba estos prompts:
 
-- `"Explain the architecture of this project"`
-- `"What files are in the src directory and what do they do?"`
-- `"What would I need to build to make the Battle button work?"`
+- «Explica la arquitectura de este proyecto».
+- «¿Qué archivos hay en el directorio src y para qué sirven?».
+- «¿Qué tendría que construir para que funcione el botón Battle?».
 
 > 💡 Usa **@workspace** para darle a Copilot contexto de todo el proyecto para respuestas más precisas.
 <!-- track:vscode:end -->

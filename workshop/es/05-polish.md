@@ -6,10 +6,11 @@
 Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte trata sobre dividir el trabajo para que puedas mejorar la responsividad, el manejo de errores y la calidad sin hacer todo en un solo bucle serial.
 
 <!-- track:vscode:start -->
-## Tarea 1: Agente en Segundo Plano para Diseño Responsivo
+## Tarea 1: Agente en segundo plano para el diseño adaptable
 
-1. En el panel de Chat, haz clic en **+** → **New background agent**.
-2. Ingresa este prompt:
+1. En el panel de Chat, haz clic en **+** para iniciar un chat nuevo.
+2. En la parte inferior de la ventana, cambia **Local** a **Copilot CLI**.
+3. Escribe este prompt:
 
    ```
    Add responsive CSS media queries: at 1024px switch comparison to single column,
@@ -18,13 +19,13 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
    Enter triggers battle, and focus states are visible.
    ```
 
-3. Déjalo ejecutarse de forma independiente — no necesitas observarlo.
-4. Cuando termine, **Revisa** los cambios y haz clic en **Apply**.
+4. Deja que se ejecute de forma independiente; no hace falta que lo supervises.
+5. Cuando termine, **revisa** los cambios y haz clic en **Apply**.
 
-## Tarea 2: Agente en Segundo Plano para UX de Errores
+## Tarea 2: Agente en segundo plano para mejorar los errores
 
-1. Inicia otro agente en segundo plano.
-2. Ingresa este prompt:
+1. Inicia otro chat en segundo plano.
+2. Escribe este prompt:
 
    ```
    Improve the error experience: add a shake animation for errors, styled error
@@ -35,10 +36,11 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
 
 3. Revisa los cambios cuando el agente termine y haz clic en **Apply**.
 
-## Tarea 3: Agente en la Nube para Variaciones (Opcional)
+## Tarea 3: Agente en la nube para probar variaciones (opcional)
 
-1. Haz clic en **+** → **New cloud agent**.
-2. Ingresa este prompt:
+1. En el panel de Chat, haz clic en **+** para iniciar un chat nuevo.
+2. En la parte inferior de la ventana, cambia **Local** a **Cloud**.
+3. Escribe este prompt:
 
    ```
    Create an alternative color theme for the battle page — keep the retro arcade
@@ -46,8 +48,8 @@ Ahora que la aplicación funciona y se ve genial, es hora de pulir. Esta parte t
    Create it as a CSS custom property theme that could be toggled.
    ```
 
-3. Revisa las **sesiones de agentes** para monitorear el progreso.
-4. Revisa la variación de diseño en el PR que el agente en la nube crea.
+4. Consulta las **sesiones de agentes** para seguir el progreso.
+5. Revisa la variación de diseño en el PR que cree el agente en la nube.
 
 ## Tarea 4: Verifica Todo
 <!-- track:vscode:end -->

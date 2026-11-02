@@ -11,7 +11,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mona Mayhem Workshop</title>
+    <title>Taller Mona Mayhem</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -29,10 +29,10 @@
         <div class="header-content">
             <a href="index.html" class="header-brand">
                 <span class="header-icon">🎮</span>
-                <span class="header-title">Mona Mayhem Workshop</span>
+                <span class="header-title">Taller Mona Mayhem</span>
             </a>
             <div class="header-nav">
-                <div class="track-toggle" role="tablist" aria-label="Workshop track toggle">
+                <div class="track-toggle" role="tablist" aria-label="Alternar itinerario del taller">
                     <button class="track-btn active" data-track="vscode" type="button">VS Code</button>
                     <button class="track-btn" data-track="cli" type="button">CLI</button>
                 </div>
@@ -385,7 +385,7 @@
             buildSidebar();
             updateNavButtons();
             buildFooterNav();
-            document.title = `${step.title} - Mona Mayhem Workshop (${TRACKS[currentTrack].label})`;
+            document.title = `${step.title} - Taller Mona Mayhem (${TRACKS[currentTrack].label})`;
 
             const contentEl = document.getElementById('markdownContent');
             contentEl.innerHTML = '<div class="loading">Cargando contenido</div>';
