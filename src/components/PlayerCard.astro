@@ -1,0 +1,45 @@
+---
+interface Props {
+	player: '1' | '2';
+	label: string;
+}
+
+const { player, label } = Astro.props;
+---
+
+<article id={`player-card-${player}`} class:list={['player-card', player === '1' ? 'player-one' : 'player-two']}>
+	<header class="player-heading">
+		<img class="player-avatar" alt="" hidden />
+		<div>
+			<p class="player-label">{label}</p>
+			<p class="player-placeholder">Enter a username</p>
+			<a class="player-name" target="_blank" rel="noreferrer" hidden></a>
+			<p class="fighter-class-badge" title="" hidden></p>
+		</div>
+	</header>
+	<div class="contribution-grid" role="img" aria-label={`${label} contribution calendar`}>
+		<p class="grid-placeholder">Contribution calendar loads when you battle.</p>
+	</div>
+	<dl class="player-stats">
+		<div class="stat">
+			<dt>Total contributions</dt>
+			<dd data-stat="total">—</dd>
+		</div>
+		<div class="stat">
+			<dt>Longest streak</dt>
+			<dd data-stat="longest-streak">—</dd>
+		</div>
+		<div class="stat">
+			<dt>Current streak</dt>
+			<dd data-stat="current-streak">—</dd>
+		</div>
+		<div class="stat">
+			<dt>Peak day</dt>
+			<dd data-stat="peak-day">—</dd>
+		</div>
+		<div class="stat">
+			<dt>Consistency</dt>
+			<dd data-stat="consistency">—</dd>
+		</div>
+	</dl>
+</article>

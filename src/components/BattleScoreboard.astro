@@ -1,0 +1,59 @@
+<section class="scoreboard" aria-labelledby="winner-banner">
+	<div class="health-bars" aria-label="Battle health">
+		<div class="health-player health-player-one">
+			<div class="health-label"><span id="health-name-one">PLAYER 1</span><span id="health-value-one">100%</span></div>
+			<div class="health-track" role="progressbar" aria-label="Player 1 health" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+				<span id="health-bar-one" class="health-fill"></span>
+			</div>
+		</div>
+		<div class="health-player health-player-two">
+			<div class="health-label"><span id="health-name-two">PLAYER 2</span><span id="health-value-two">100%</span></div>
+			<div class="health-track" role="progressbar" aria-label="Player 2 health" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+				<span id="health-bar-two" class="health-fill"></span>
+			</div>
+		</div>
+	</div>
+	<h2 id="winner-banner" class="winner-banner" aria-live="polite" aria-atomic="true">VS</h2>
+	<div class="scoreline" aria-label="Battle score points">
+		<span><span id="score-one-name">Player 1</span> <strong id="score-one">0</strong></span>
+		<span class="score-versus">BATTLE SCORE</span>
+		<span><span id="score-two-name">Player 2</span> <strong id="score-two">0</strong></span>
+	</div>
+	<table class="scoring-table">
+		<thead>
+			<tr>
+				<th scope="col">Category</th>
+				<th id="category-player-one" scope="col">Player 1</th>
+				<th id="category-player-two" scope="col">Player 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr data-category="totalContributions">
+				<th scope="row">Total contributions</th>
+				<td data-value="playerOne">—</td>
+				<td data-value="playerTwo">—</td>
+			</tr>
+			<tr data-category="longestStreak">
+				<th scope="row">Longest streak</th>
+				<td data-value="playerOne">—</td>
+				<td data-value="playerTwo">—</td>
+			</tr>
+			<tr data-category="currentStreak">
+				<th scope="row">Current streak</th>
+				<td data-value="playerOne">—</td>
+				<td data-value="playerTwo">—</td>
+			</tr>
+			<tr data-category="peakDay">
+				<th scope="row">Peak daily contributions</th>
+				<td data-value="playerOne">—</td>
+				<td data-value="playerTwo">—</td>
+			</tr>
+			<tr data-category="consistency">
+				<th scope="row">Consistency</th>
+				<td data-value="playerOne">—</td>
+				<td data-value="playerTwo">—</td>
+			</tr>
+		</tbody>
+	</table>
+	<p class="scoring-note">Each category is worth 1 point. Tied categories award no points.</p>
+</section>
